@@ -11,6 +11,9 @@
     overflow: hidden;
     position: relative;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #hero-1895:before {
     content: '';
@@ -28,7 +31,8 @@
     width: 100%;
     /* changes to 1280px at desktop */
     max-width: 40.5rem;
-    margin: 7rem 1rem auto 1rem;
+    /* margin: 7rem 1rem auto 1rem; */
+    margin-top: 7rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,13 +42,14 @@
   }
   #hero-1895 .cs-content {
     /* set text align to left if content needs to be left aligned */
-    text-align: left;
+    text-align: center;
     width: 100%;
     max-width: 45.625rem;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
+    align-items: center;
     position: relative;
     z-index: 3;
   }
@@ -139,7 +144,8 @@
     display: block;
   }
   #hero-1895 .cs-image-group {
-    font-size: min(2.29vw, 0.9rem);
+    /* font-size: min(2.29vw, 0.9rem); */
+    /* max-width: 50vw; */
     width: 34.9375em;
     height: 42.5em;
     display: block;
@@ -147,7 +153,9 @@
     z-index: 2;
   }
   #hero-1895 .cs-picture {
-    width: 32.625em;
+      width: 100%;
+    /* width: 32.625em; */
+    padding: auto 2rem auto 2rem;
     height: 42.5em;
     box-sizing: border-box;
     background-color: #dab692;
@@ -281,6 +289,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: left;
   }
   #hero-1895 .cs-container {
     max-width: 80rem;
@@ -292,6 +301,14 @@
   #hero-1895 .cs-content {
     /* 48px - 64px */
     padding: clamp(3rem, 5vw, 4rem) 0;
+    text-align: left;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  #hero-1895 .cs-text {
+      text-align: left;
   }
   #hero-1895 .cs-image-group {
     font-size: min(1.27vw, 1rem);
