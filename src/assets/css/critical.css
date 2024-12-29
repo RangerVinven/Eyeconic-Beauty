@@ -49,7 +49,8 @@
     z-index: 3;
   }
   #hero-1895 .cs-topper {
-    color: hsl(350, 100%, 71%);
+    /* color: hsl(350, 100%, 71%); */
+    color: #333333;
   }
   #hero-1895 .cs-text {
     margin-bottom: 0.75rem;
@@ -275,6 +276,12 @@
 
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+  #hero-1895 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   #hero-1895 .cs-container {
     max-width: 80rem;
     flex-direction: row;
@@ -301,7 +308,7 @@
 /* Large Desktop - 1600px */
 @media only screen and (min-width: 100rem) {
   #hero-1895 .cs-background {
-    background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/dermatology-banner.png");
+    background: url("/assets/images/new_background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
