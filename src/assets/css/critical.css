@@ -39,7 +39,7 @@
     text-align: center;
   }
   #hero-855 .cs-topper {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.2em;
     text-transform: uppercase;
     text-align: inherit;
@@ -129,7 +129,7 @@
     height: 100%;
     width: 100%;
     /* makes image act as a background image */
-    object-fit: cover;
+    object-fit: contain;
     /* ensures the top of the images is at the top of the container, no heads getting cut off */
     object-position: top;
   }
@@ -225,7 +225,8 @@
   }
   #hero-855 .cs-picture {
     /* 623px - 814px */
-    height: clamp(38.9375rem, 60vw, 50.875rem);
+    /* height: clamp(34.9375rem, 50vw, 40.875rem); */
+    height: 32rem;
   }
   #hero-855 .cs-wave {
     width: 100%;
