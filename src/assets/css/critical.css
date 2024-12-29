@@ -160,7 +160,7 @@
   height: 20px;
   z-index: 999;
   transform: translateY(-10px);
-  backdrop-filter: blur(100px);
+  backdrop-filter: blur(--blur_amount);
 }
 #hero-855 .cs-background {
     /* transform: rotate(180deg); */
@@ -181,6 +181,25 @@
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+
+#hero-855 .cs-background::after {
+  content: '';
+
+  display: block;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 30px;
+  z-index: 999;
+  transform: translateY(-15px);
+  backdrop-filter: blur(--blur_amount);
+  /* background-color: red; */
 }
 
 }

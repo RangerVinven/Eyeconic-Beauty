@@ -1,21 +1,4 @@
 /* PAGE-SPECIFIC STYLES FOR THE HOME */
-#section-background-image {
-    transform: rotate(180deg);
-    filter: blur(100px);
-    -webkit-filter: blur(100px);
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.8;
-}
-
 /*-- -------------------------- -->
 <---    Side by Side Reverse    -->
 <--- -------------------------- -*/
@@ -190,9 +173,9 @@
     /* prevents padding from adding to the width */
     box-sizing: border-box;
     padding: 0 1.5rem;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     overflow: hidden;
-    color: #fff;
+    color: black;
     border: none;
     border-radius: 0.25rem;
     display: inline-block;
@@ -239,8 +222,8 @@
     /* transform: rotate(180deg); */
  -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
-    filter: blur(100px);
-    -webkit-filter: blur(100px);
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
     width: 100%;
     height: 100%;
     display: block;
@@ -552,8 +535,8 @@
  
   #faq-351 .cs-background {
     /* transform: rotate(180deg); */
-    filter: blur(100px);
-    -webkit-filter: blur(100px);
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
     width: 100%;
     height: 100%;
     display: block;
@@ -656,9 +639,9 @@
     /* prevents padding from adding to the width */
     box-sizing: border-box;
     padding: 0 1.5rem;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     overflow: hidden;
-    color: #fff;
+    color: black;
     border: none;
     border-radius: 0.25rem;
     display: inline-block;
@@ -770,8 +753,8 @@
     transform: rotate(180deg);
     /* -webkit-transform: scaleY(-1); */
     /* transform: scaleY(-1); */
-    filter: blur(100px);
-    -webkit-filter: blur(100px);
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
     width: 100%;
     height: 100%;
     display: block;
@@ -804,8 +787,7 @@
   height: 20px;
   z-index: 999;
   transform: translateY(-10px);
-  /* backdrop-filter: blur(100px); */
-  background-color: red;
+  backdrop-filter: blur(100px);
 }
 
 
