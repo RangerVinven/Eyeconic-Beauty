@@ -19,5 +19,19 @@
     "treatment_time": "45 minutes",
 
     "offers_infill": false
+  },
+{
+    "name": "Expert Brows",
+    "description": "Expert Brows are highly defined, 3D brow shapes that will be achieved through brow mapping, shaping, threading waxing and tinting (and eyebrow extensions).",
+    "treatment_time": "30 minutes",
+
+    "offers_infill": false
+  },
+{
+    "name": "Eyebrow Extensions",
+    "description": "Individual hairs are glued to skin or existing hair to create an instantly fuller brow. They are available in a variety of colours and lengths, and last 5-14 days. Touch-ups are required every 2 weeks.",
+    "treatment_time": "1 hour",
+
+    "offers_infill": false
   }
 ]
