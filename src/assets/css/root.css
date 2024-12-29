@@ -71,7 +71,9 @@ body {
     text-align: inherit;
     letter-spacing: .1em;
     font-weight: 700;
-    color: var(--primary);
+    /* color: var(--primary); */
+    color: #333333;
+    margin-top: 2rem;
     /* color: #333333; */
     margin-bottom: 0.25rem;
     display: block;

@@ -237,8 +237,10 @@
   }
   #sbs-r-1892 .cs-background {
     /* transform: rotate(180deg); */
-    filter: blur(30px);
-    -webkit-filter: blur(30px);
+ -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+    filter: blur(100px);
+    -webkit-filter: blur(100px);
     width: 100%;
     height: 100%;
     display: block;
@@ -362,7 +364,7 @@
         height: auto;
         /* 20px - 24px bottom */
         /* 16px - 24px left & right */
-        padding: 0 clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 1.3vw, 1.5rem);
+        padding: 1rem clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 1.3vw, 1.5rem);
         opacity: 1;
     }
     #faq-351 .cs-button {
@@ -581,9 +583,9 @@
       right: 0;
       bottom: 0;
 
-      height: 20px;
+      height: 30px;
       z-index: 999;
-      transform: translateY(-10px);
+      transform: translateY(-15px);
       backdrop-filter: blur(100px);
   }
 /* Desktop - 1024px */
