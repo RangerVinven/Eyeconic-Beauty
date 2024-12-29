@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Classic Extensions and Infill",
+    "description": "Classic lashes are the perfect way to enhance your natural lashes. One individual lash is added to each natural lash in a 1:1 application to create a set of longer and thicker lashes. Depending on the look you desire, Classic Lashes are available in a wide range of lengths, thicknesses and curls. Treatment time is 2 hours.",
+    "treatment_time": "1 hour",
+
+    "offers_infill": true,
+    "infill_time": "1 hour",
+    "infill_interval": "every 2 weeks"
+  },
+  {
+    "name": "Russian Lashes and Infill",
+    "description": "Russian Lashes are created using individual lash extensions that have been formed into fans and are then applied to the natural lashes, creating a more dramatic look than classic lashes.",
+    "treatment_time": "2 hours",
+
+    "offers_infill": true,
+    "infill_time": "45-60 minutes",
+    "infill_interval": "after 2-3 weeks"
+  },
+  {
+    "name": "Volume Lashes and Infill",
+    "description": "Volume Lashes is a specialised technique where fanned lashes are applied to each natural lash from a ratio of 2:1 (two extensions per natural lash) to 10:1 for mega volume. The most popular ratio is 3:1 or 4:1 also known as 3D or 4D lashes.",
+    "treatment_time": "2 hours",
+
+    "offers_infill": true,
+    "infill_time": "60-90 minutes",
+    "infill_interval": "after 2-3 weeks"
+  },
+  {
+    "name": "Hybrid Lashes and Infill",
+    "description": "A Hybrid Lash treatment is a combination of volume and individual lashes, taking the best bits from both treatments. Hybrid lashes will give you volume and length resulting in a wispy, textured lash look.",
+    "treatment_time": "2 hours",
+
+    "offers_infill": true,
+    "infill_time": "60-90 minutes",
+    "infill_interval": "after 2-3 weeks"
+  },
+  {
+    "name": "LVL - Lash, Lift & Tint",
+    "description": "LVL Lash Lift & Tint is the tunning alternative to eyelash extensions. This low maintanance, natural looking treatment will give your natrual lashes a beautiful lifted look, longer apperance and lasts up to 6-8 weeks requiring minimal aftercare.",
+    "treatment_time": "1 hour",
+
+    "offers_infill": false
+  },
+  {
+    "name": "Bottom Lash Tint",
+    "description": "Bottom Lash Tint enhances your bottom lashes, giving your eyes a fuller more vibrant look.",
+    "treatment_time": "30 minutes",
+
+    "offers_infill": false
+  },
+  {
+    "name": "Eyelash Removal",
+    "description": "Application of a specialised remover to dissolve adhesive holding the extensions.",
+    "treatment_time": "30 minutes",
+
+    "offers_infill": false
+  }
+]

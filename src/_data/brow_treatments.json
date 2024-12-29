@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Henna Brows",
+    "description": "Henna Brows are a semi-permanent eyebrow treatment that tints the eyebrow hair and stains the skin, creating the appearance of fuller more defined brows. It's a longer lasting alternative to regular brow tints and will last up to 10 days on skin and up to 6 weeks on hairs.",
+    "treatment_time": "1 hour",
+
+    "offers_infill": false,
+  },
+  {
+    "name": "Brow Wax",
+    "description": "After outlining the ideal brow shape for your face, wax is applied to remove unwanted hair.",
+    "treatment_time": "30 minutes",
+
+    "offers_infill": false,
+  },
+{
+    "name": "Eyebrow Stain",
+    "description": "Eyebrow Stain offers a more subtle natural appearanc than Henna Brows which are darker, more visible and ramatic. Brow stain will last on skin up to 10 days and 4-6 weeks on hairs.",
+    "treatment_time": "45 minutes",
+
+    "offers_infill": false,
+  }
+]
