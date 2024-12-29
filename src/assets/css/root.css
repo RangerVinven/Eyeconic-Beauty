@@ -388,7 +388,8 @@ body {
     color: var(--green);
   }
   #cs-navigation .cs-li-link:hover {
-    color: var(--green);
+    /* color: var(--green); */
+      font-weight: bold;
   }
   #cs-navigation .cs-button-solid {
     display: none;
@@ -572,6 +573,7 @@ body {
     transition: color 0.3s;
   }
   #cs-navigation .cs-li-link:hover {
+    font-weight: bold;
     color: var(--green);
   }
   #cs-navigation .cs-li-link.cs-active {
