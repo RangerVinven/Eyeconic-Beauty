@@ -2,6 +2,7 @@
 const pluginEleventyNavigation = require("@11ty/eleventy-navigation");
 const pluginMinifier = require("@sherby/eleventy-plugin-files-minifier");
 const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
+const eleventyPluginSharpImages = require("@codestitchofficial/eleventy-plugin-sharp-images");
 
 // Configs
 const configCss = require("./src/config/css");
@@ -14,6 +15,10 @@ const filterPostDate = require("./src/config/postDate");
 const isProduction = configServer.isProduction;
 
 module.exports = function (eleventyConfig) {
+    eleventyConfig.addPlugin(eleventyPluginSharpImages, {
+            urlPath: "/assets/images",
+            outputDir: "public/assets/images",
+        });
     /**=====================================================================
           EXTENSIONS - Recognising non-default languages as templates 
     =======================================================================*/

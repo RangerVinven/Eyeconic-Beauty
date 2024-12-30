@@ -38,11 +38,11 @@
 
 
     // mobile nav toggle code
-    const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));
-        for (const item of dropDowns) {
-            const onClick = () => {
-            item.classList.toggle('cs-active')
-        }
-        item.addEventListener('click', onClick)
-        }
+    // const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));
+    //     for (const item of dropDowns) {
+    //         const onClick = () => {
+    //         item.classList.toggle('cs-active')
+    //     }
+    //     item.addEventListener('click', onClick)
+    //     }
                                 

@@ -1,7 +1,6 @@
 ---
 title: "Eyeconic Beauty By Anya | Lash and Brow Technician | Inverurie, Aberdeenshire"
 description: "Meta description for the page"
-preloadImg: "/assets/images/hero_box.jpg"
 permalink: "/"
 tags: "sitemap" # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
 eleventyNavigation:
@@ -91,15 +90,15 @@ eleventyNavigation:
         </div>
         <!--Hero Image-->
         <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/hero_box.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/hero_box.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/hero_box.jpg" alt="therapy" />
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/hero_box.jpg' | resize({ height: 800, width: 800 }) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/hero_box.jpg' | resize({ height: 800, width: 800 }) | webp %}">
+            <img aria-hidden="true" decoding="async" src="{% getUrl '/assets/images/hero_box.jpg' | resize({ height: 800, width: 800 }) | webp %}"alt="therapy" />
         </picture>
     </div>
     <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="/assets/images/new_background.jpg">
-        <source media="(min-width: 601px)" srcset="/assets/images/new_background.jpg">
-        <img decoding="async" src="/assets/images/new_background.jpg" alt="cream background with ripple" width="1920" height="970" aria-hidden="true">
+        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/new_background.jpg' | webp %}">
+        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/new_background.jpg' | webp %}">
+        <img decoding="async" src="{% getUrl '/assets/images/new_background.jpg' | webp %}" alt="cream background with ripple" width="1920" height="970" aria-hidden="true">
     </picture>
 </section>
                                                                 
@@ -113,21 +112,21 @@ eleventyNavigation:
         <div class="cs-image-group">
             <picture class="cs-picture">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/anya.jpg">
+                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/anya.jpg' | resize({ height: 664, width: 506 }) | webp %}">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/anya.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/anya.jpg" alt="dermatologist" width="324" height="467">
+                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/anya.jpg' | resize({ height: 664, width: 506 }) | webp %}">
+                <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/anya.jpg' | resize({ height: 664, width: 506 }) | webp %}" alt="dermatologist" width="324" height="467">
             </picture>
-            <img class="cs-graphic cs-brown" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/lines-reverse.svg" alt="graphic" width="208" height="203" aria-hidden="true">
-            <img class="cs-graphic cs-peach" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/blob-reverse.svg" alt="graphic" width="56" height="42" aria-hidden="true">
-            <img class="cs-graphic cs-beige" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/beige-reverse.svg" alt="graphic" width="379" height="394" aria-hidden="true">
-            <img class="cs-graphic cs-leaf" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/leaf-reverse.svg" alt="graphic" width="179" height="225" aria-hidden="true">
+            <img class="cs-graphic cs-brown" loading="lazy" decoding="async" src="/assets/svgs/lines-reverse.svg" alt="graphic" width="208" height="203" aria-hidden="true">
+            <img class="cs-graphic cs-peach" loading="lazy" decoding="async" src="/assets/svgs/blob-reverse.svg" alt="graphic" width="56" height="42" aria-hidden="true">
+            <img class="cs-graphic cs-beige" loading="lazy" decoding="async" src="/assets/svgs/beige-reverse.svg" alt="graphic" width="379" height="394" aria-hidden="true">
+            <img class="cs-graphic cs-leaf" loading="lazy" decoding="async" src="/assets/svgs/leaf-reverse.svg" alt="graphic" width="179" height="225" aria-hidden="true">
             <picture class="cs-info">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/logo.png">
+                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/logo.png' | resize({ height: 467, width: 467 }) | webp %}">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/logo.png">
-                <img loading="lazy" decoding="async" src="/assets/images/logo.png" alt="dermatologist" width="324" height="467">
+                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/logo.png' | resize({ height: 467, width: 467 }) | webp %}">
+                <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/logo.png' | resize({ height: 467, width: 467 }) | webp %}" alt="dermatologist" width="324" height="467">
             </picture>
         </div>
         <div class="cs-content">
@@ -142,9 +141,9 @@ eleventyNavigation:
         </div>
     </div>
     <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="/assets/images/background1.jpg">
-        <source media="(min-width: 601px)" srcset="/assets/images/background1.jpg">
-        <img decoding="async" src="/assets/images/background1.jpg" alt="cream background with ripple" width="1920" height="970" aria-hidden="true">
+        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/background1.jpg' | webp %}">
+        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/background1.jpg' | webp %}">
+        <img decoding="async" src="{% getUrl '/assets/images/background1.jpg' | webp %}" alt="cream background with ripple" width="1920" height="970" aria-hidden="true">
     </picture>
 </section>
                                 
@@ -195,9 +194,9 @@ eleventyNavigation:
             </ul>
     </div>
     <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="/assets/images/background2.jpg">
-        <source media="(min-width: 601px)" srcset="/assets/images/background2.jpg">
-        <img decoding="async" src="/assets/images/background2.jpg" alt="cream background with ripple" width="1920" height="970" aria-hidden="true">
+        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/background2.jpg' | webp %}">
+        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/background2.jpg' | webp %}">
+        <img decoding="async" src="{% getUrl '/assets/images/background2.jpg' | webp %}" alt="cream background with ripple" width="1920" height="970" aria-hidden="true">
     </picture>
 </section>
 
@@ -333,9 +332,9 @@ eleventyNavigation:
         </div>
     </div>
     <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="/assets/images/background3.jpg">
-        <source media="(min-width: 601px)" srcset="/assets/images/background3.jpg">
-        <img decoding="async" src="/assets/images/background3.jpg" alt="cream background with ripple" width="1920" height="970" aria-hidden="true">
+        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/background3.jpg' | webp %}">
+        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/background3.jpg' | webp %}">
+        <img decoding="async" src="{% getUrl '/assets/images/background3.jpg' | webp %}" alt="cream background with ripple" width="1920" height="970" aria-hidden="true">
     </picture>
 </section>
 
@@ -352,8 +351,7 @@ eleventyNavigation:
     <div class="cs-container">
         <div class="cs-content">
             <div class="cs-flex">
-                <span class="cs-topper">Gallery</span>
-                <h2 class="cs-title">See Our Results</h2>
+                <h2 class="cs-title">Gallery</h2>
             </div>
             <div class="cs-button-group">
                 <button class="cs-button" data-filter="one">
@@ -371,18 +369,20 @@ eleventyNavigation:
             <!--Gallery 1-->
             <div class="cs-gallery" data-category="one">
             {% for image in lash_images %}
+            {% set image_path = '/assets/images/lashes/' ~ image ~ '.jpg' %}
                 <picture class="cs-image">
-                  <source media="(max-width: 600px)" srcset="/assets/images/lashes/{{ image }}.jpg">
-                  <source media="(min-width: 601px)" srcset="/assets/images/lashes/{{ image }}.jpg">
-                  <img loading="lazy" decoding="async" src="/assets/images/lashes/{{ image }}.jpg" alt="Lash treatment" width="305" height="400">
+                    <source media="(max-width: 600px)" srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                  <source media="(min-width: 601px)" srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                  <img loading="lazy" decoding="async" src="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}" alt="Lash treatment" width="305" height="400">
                 </picture>
               {% endfor %}
 
             {% for image in brow_images %}
+            {% set image_path = '/assets/images/brows/' ~ image ~ '.jpg' %}
                 <picture class="cs-image">
-                  <source media="(max-width: 600px)" srcset="/assets/images/brows/{{ image }}.jpg">
-                  <source media="(min-width: 601px)" srcset="/assets/images/brows/{{ image }}.jpg">
-                  <img loading="lazy" decoding="async" src="/assets/images/brows/{{ image }}.jpg" alt="Lash treatment" width="305" height="400">
+                  <source media="(max-width: 600px)" srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                  <source media="(min-width: 601px)" srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                  <img loading="lazy" decoding="async" src="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}" alt="Lash treatment" width="305" height="400">
                 </picture>
               {% endfor %}
 
@@ -390,10 +390,11 @@ eleventyNavigation:
             <!--Gallery 2-->
             <div class="cs-gallery cs-hidden" data-category="two">
             {% for image in lash_images %}
+            {% set image_path = '/assets/images/lashes/' ~ image ~ '.jpg' %}
                 <picture class="cs-image">
-                  <source media="(max-width: 600px)" srcset="/assets/images/lashes/{{ image }}.jpg">
-                  <source media="(min-width: 601px)" srcset="/assets/images/lashes/{{ image }}.jpg">
-                  <img loading="lazy" decoding="async" src="/assets/images/lashes/{{ image }}.jpg" alt="Lash treatment" width="305" height="400">
+                  <source media="(max-width: 600px)" srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                  <source media="(min-width: 601px)" srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                  <img loading="lazy" decoding="async" src="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}" alt="Lash treatment" width="305" height="400">
                 </picture>
               {% endfor %}
             </div>
@@ -401,19 +402,20 @@ eleventyNavigation:
             <!--Gallery 3-->
             <div class="cs-gallery cs-hidden" data-category="three">
             {% for image in brow_images %}
+            {% set image_path = '/assets/images/brows/' ~ image ~ '.jpg' %}
                 <picture class="cs-image">
-                  <source media="(max-width: 600px)" srcset="/assets/images/brows/{{ image }}.jpg">
-                  <source media="(min-width: 601px)" srcset="/assets/images/brows/{{ image }}.jpg">
-                  <img loading="lazy" decoding="async" src="/assets/images/brows/{{ image }}.jpg" alt="Lash treatment" width="305" height="400">
+                  <source media="(max-width: 600px)" srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                  <source media="(min-width: 601px)" srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                  <img loading="lazy" decoding="async" src="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}" alt="Lash treatment" width="305" height="400">
                 </picture>
               {% endfor %}
             </div>
         </div>
     </div>
     <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="/assets/images/background2.jpg">
-        <source media="(min-width: 601px)" srcset="/assets/images/background2.jpg">
-        <img decoding="async" src="/assets/images/background2.jpg" alt="cream background with ripple" width="1920" height="970" aria-hidden="true">
+        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/background2.jpg' | webp %}">
+        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/background2.jpg' | webp %}">
+        <img decoding="async" src="{% getUrl '/assets/images/background2.jpg' | webp %}" alt="cream background with ripple" width="1920" height="970" aria-hidden="true">
     </picture>
 </section>
                                 
@@ -439,19 +441,19 @@ eleventyNavigation:
         <ul class="cs-stat-group">
             <li class="cs-item">
                 <picture class="cs-picture">
-                    <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-grey.svg" alt="icon" width="35" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                    <img class="cs-icon" src="/assets/svgs/phone-grey.svg" alt="icon" width="35" height="40" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
                 <div class="cs-flex-group">
                     <span class="cs-header">Social Media</span>
                     <span class="cs-social-link-container">
                         <a href="https://www.facebook.com/people/Eyeconic-Beauty-By-Anya/61569984466017/" class="cs-social-link">
-                            <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                            <img class="cs-social-icon" src="/assets/svgs/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
                         </a>
                         <a target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/people/Eyeconic-Beauty-By-Anya/61569984466017/" class="cs-link">Facebook</a>
                     </span>
                     <span class="cs-social-link-container">
                         <a href="https://www.instagram.com/eyeconicbeauty_byanya/" class="cs-social-link">
-                            <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                            <img class="cs-social-icon" src="/assets/svgs/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
                         </a>
                         <a target="_blank" rel="noreferrer noopener" href="https://www.instagram.com/eyeconicbeauty_byanya/" class="cs-link">Instagram</a>
                     </span>
@@ -459,23 +461,13 @@ eleventyNavigation:
             </li>
             <li class="cs-item">
                 <picture class="cs-picture">
-                    <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-grey.svg" alt="icon" width="40" height="35" loading="lazy" decoding="async" aria-hidden="true">
+                    <img class="cs-icon" src="/assets/svgs/pin-grey.svg" alt="icon" width="40" height="35" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
                 <div class="cs-flex-group">
                     <span class="cs-header">Address</span>
                     <a target="_blank" rel="noreferrer noopener" href="https://maps.app.goo.gl/jc9HwuPehkKdESyT7" class="cs-link">4 Baddifurrow, Inverurie, Aberdeenshire, AB51 3WH</a>
                 </div>
             </li>
-            <!-- <li class="cs-item"> -->
-            <!--     <picture class="cs-picture"> -->
-            <!--         <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/clock-grey.svg" alt="icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true"> -->
-            <!--     </picture> -->
-            <!--     <div class="cs-flex-group"> -->
-            <!--         <span class="cs-header">Open Hours</span> -->
-            <!--         <span class="cs-hours">Monday To Saturday</span> -->
-            <!--         <span class="cs-hours">9:00 AM - 10:30 PM</span> -->
-            <!--     </div> -->
-            <!-- </li> -->
         </ul>
     </div>
                                 
@@ -483,9 +475,9 @@ eleventyNavigation:
     </div>
     <!-- Background Image-->
     <picture class="cs-picture">
-        <source media="(max-width: 600px)" srcset="/assets/images/new_background.jpg">
-        <source media="(min-width: 601px)" srcset="/assets/images/new_background.jpg">
-        <img loading="lazy" decoding="async" src="/assets/images/new_background.jpg" alt="cabinets" width="1920" height="1280" aria-hidden="true">
+        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/new_background.jpg' | webp %}">
+        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/new_background.jpg' | webp %}">
+        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/new_background.jpg' | webp %}" alt="cabinets" width="1920" height="1280" aria-hidden="true">
     </picture>
 </section>
                                 
