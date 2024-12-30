@@ -102,6 +102,8 @@ body {
     color: var(--bodyTextColor);
 }
                             
+
+
 /*-- -------------------------- -->
 <---     Mobile Navigation      -->
 <--- -------------------------- -*/
@@ -573,8 +575,8 @@ body {
     transition: color 0.3s;
   }
   #cs-navigation .cs-li-link:hover {
-    font-weight: bold;
     color: var(--green);
+    font-weight: bold;
   }
   #cs-navigation .cs-li-link.cs-active {
     /* color: var(--green); */
