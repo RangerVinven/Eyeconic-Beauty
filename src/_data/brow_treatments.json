@@ -1,42 +1,42 @@
 [
   {
     "name": "Henna Brows",
-    "description": "Henna Brows are a semi-permanent eyebrow treatment that tints the eyebrow hair and stains the skin, creating the appearance of fuller, more defined brows. It's a longer-lasting alternative to regular brow tints and will last up to 10 days on skin and up to 6 weeks on hairs.",
+    "description": "Henna Brows are a semi-permanent eyebrow treatment that tints the eyebrow hair and stains the skin, creating the appearance of fuller, more defined brows. It's a longer-lasting alternative to regular brow tints and will last up to 10 days on skin and up to 6 weeks on hairs",
     "treatment_time": "1 hour",
 
     "offers_infill": false
   },
   {
     "name": "Brow Wax",
-    "description": "After outlining the ideal brow shape for your face, wax is applied to remove unwanted hair.",
+    "description": "After outlining the ideal brow shape for your face, wax is applied to remove unwanted hair",
     "treatment_time": "30 minutes",
 
     "offers_infill": false
   },
   {
     "name": "Eyebrow Stain",
-    "description": "Eyebrow Stain offers a more subtle, natural appearance than Henna Brows, which are darker, more visible and dramatic. Brow stain will last on skin up to 10 days and 4-6 weeks on hairs.",
+    "description": "Eyebrow Stain offers a more subtle, natural appearance than Henna Brows, which are darker, more visible and dramatic. Brow stain will last on skin up to 10 days and 4-6 weeks on hairs",
     "treatment_time": "45 minutes",
 
     "offers_infill": false
   },
   {
     "name": "Expert Brows",
-    "description": "Expert Brows are highly defined, 3D brow shapes that will be achieved through brow mapping, shaping, threading, waxing and tinting (and eyebrow extensions).",
-    "treatment_time": "30 minutes",
+    "description": "Expert Brows are highly defined, 3D brow shapes that will be achieved through brow mapping, shaping, threading, waxing, tinting and eyebrow extensions",
+    "treatment_time": "90 minutes",
 
     "offers_infill": false
   },
   {
     "name": "Eyebrow Tint",
-    "description": "Eyebrow Tint is the process of applying tint to enhance and define your brows, darkening fine hairs in and around your eyebrows.",
+    "description": "Eyebrow Tint is the process of applying tint to enhance and define your brows, darkening fine hairs in and around your eyebrows",
     "treatment_time": "30 minutes",
 
     "offers_infill": false
   },
   {
     "name": "Eyebrow Extensions",
-    "description": "Individual hairs are glued to skin or existing hair to create an instantly fuller brow. They are available in a variety of colours and lengths, and last 5-14 days. Touch-ups are required every 2 weeks.",
+    "description": "Individual hairs are glued to skin or existing hair to create an instantly fuller brow. They are available in a variety of colours and lengths, and last 5-14 days. Touch-ups are required every 2 weeks",
     "treatment_time": "1 hour",
 
     "offers_infill": false

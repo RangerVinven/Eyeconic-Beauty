@@ -1,8 +1,8 @@
 [
   {
     "name": "Classic Extensions and Infill",
-    "description": "Classic lashes are the perfect way to enhance your natural lashes. One individual lash is added to each natural lash in a 1:1 application to create a set of longer and thicker lashes. Depending on the look you desire, Classic Lashes are available in a wide range of lengths, thicknesses and curls. Treatment time is 2 hours.",
-    "treatment_time": "1 hour",
+    "description": "Classic lashes are the perfect way to enhance your natural lashes. One individual lash is added to each natural lash in a 1:1 application to create a set of longer and thicker lashes. Depending on the look you desire, Classic Lashes are available in a wide range of lengths, thicknesses and curls",
+    "treatment_time": "2 hours",
 
     "offers_infill": true,
     "infill_time": "1 hour",
@@ -10,7 +10,7 @@
   },
   {
     "name": "Russian Lashes and Infill",
-    "description": "Russian Lashes are created using individual lash extensions that have been formed into fans and are then applied to the natural lashes, creating a more dramatic look than classic lashes.",
+    "description": "Russian Lashes are created using individual lash extensions that have been formed into fans and are then applied to the natural lashes, creating a more dramatic look than classic lashes",
     "treatment_time": "2 hours",
 
     "offers_infill": true,
@@ -19,7 +19,7 @@
   },
   {
     "name": "Volume Lashes and Infill",
-    "description": "Volume Lashes are a specialised technique where fanned extensions are applied to your natural lash. I'm using fans of 8 lashes called 8D to create volume.",
+    "description": "Volume Lashes are a specialised technique where fanned extensions are applied to your natural lash. I'm using fans of 8 lashes called 8D to create volume",
     "treatment_time": "2 hours",
 
     "offers_infill": true,
@@ -28,7 +28,7 @@
   },
   {
     "name": "Hybrid Lashes and Infill",
-    "description": "A Hybrid Lash treatment is a combination of volume and individual lashes, taking the best bits from both treatments. Hybrid lashes will give you volume and length resulting in a wispy, textured lash look.",
+    "description": "A Hybrid Lash treatment is a combination of volume and individual lashes, taking the best bits from both treatments. Hybrid lashes will give you volume and length resulting in a wispy, textured lash look",
     "treatment_time": "2 hours",
 
     "offers_infill": true,
@@ -36,22 +36,22 @@
     "infill_interval": "after 2-3 weeks"
   },
   {
-    "name": "LVL - Lash, Lift & Tint",
-    "description": "LVL Lash Lift & Tint is the stunning alternative to eyelash extensions. This low maintenance, natural-looking treatment will give your natural lashes a beautiful lifted look, longer appearance and lasts up to 6-8 weeks requiring minimal aftercare.",
+    "name": "LVL - Lash Lift & Tint",
+    "description": "LVL Lash Lift & Tint is the stunning alternative to eyelash extensions. This low maintenance, natural-looking treatment will give your natural lashes a beautiful lifted look, longer appearance and lasts up to 6 weeks requiring minimal aftercare",
     "treatment_time": "1 hour",
 
     "offers_infill": false
   },
   {
     "name": "Bottom Lash Tint",
-    "description": "Bottom Lash Tint enhances your bottom lashes, giving your eyes a fuller more vibrant look.",
+    "description": "Bottom Lash Tint enhances your bottom lashes, giving your eyes a fuller more vibrant look",
     "treatment_time": "30 minutes",
 
     "offers_infill": false
   },
   {
     "name": "Eyelash Removal",
-    "description": "Application of a specialised remover to dissolve adhesive holding the extensions.",
+    "description": "Application of a specialised remover to dissolve adhesive holding the extensions",
     "treatment_time": "30 minutes",
 
     "offers_infill": false

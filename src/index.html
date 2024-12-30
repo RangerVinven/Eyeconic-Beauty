@@ -1,7 +1,7 @@
 ---
-title: "Pixel Perfect Websites | Code Stitch Web Designs | Denver, CO"
+title: "Eyeconic Beauty By Anya | Lash and Brow Technician | Inverurie, Aberdeenshire"
 description: "Meta description for the page"
-preloadImg: "/assets/images/landing.jpg"
+preloadImg: "/assets/images/hero_box.jpg"
 permalink: "/"
 tags: "sitemap" # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
 eleventyNavigation:
@@ -167,7 +167,7 @@ eleventyNavigation:
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        {{ treatment.description | safe }}
+                    {{ treatment.description | safe }}. Treatment time is {{ treatment.treatment_time }}.
                     {% if treatment.offers_infill %}
                         <br>
                         <br>
@@ -188,7 +188,7 @@ eleventyNavigation:
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            {{ treatment.description | safe }}
+                            {{ treatment.description | safe }}. Treatment time is {{ treatment.treatment_time }}.
                         </p>
                     </li>
                 {% endfor %}
