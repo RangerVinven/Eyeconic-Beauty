@@ -6,6 +6,13 @@
 
     "offers_infill": false
   },
+    {
+    "name": "Brow Lamination",
+    "description": "Brow lamination is a non-invasive beauty treatment that uses a chemical relaxer to soften and straighten your brow hairs. This procedure redirects unruly eyebrow hairs upward to create a fuller, more defined look. This easy, painless service often includes brow tinting and waxing to give the existing hair a bolder, enhanced look. It will last for up to 8 weeks.\n\nTo maintain the desired look, please book a maintainace appointment after 4 weeks",
+    "treatment_time": "1 hour 15 minutes",
+
+    "offers_infill": false
+  },
   {
     "name": "Brow Wax",
     "description": "After outlining the ideal brow shape for your face, wax is applied to remove unwanted hair",
