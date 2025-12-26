@@ -1,51 +1,50 @@
 [
   {
+    "name": "Microblading",
+    "description": "A semi permanent make up technique that uses a special microblading tool to create the appearance of fuller, more defined eyebrows with ultra fine hair-like strokes that blends seamlessly with your existing brows. Microblading can be used to fill in the gaps of your own brows or create realistic hair strokes for those with little or no natural eyebrow. Ideal for sparse or over tweezed brows offering a natural look that last 1-3 years depending on skin type and after care.<br><br>A consultation to discuss your desired look, your likes and dislikes, your eyebrow history and skin type, to answer all your questions about the procedure and a patch test are required before the treatment. Your brows will take 7-14 days to heal, during which time they will look 40-50% darker than when healed. A touch up appointment is recommended after 6-8 weeks for optimal results.<br><br>Using numbing cream throughout the procedure ensures that the treatment is painless. Most describe a slight scratchy feeling.<br><br>Consultation 15-20 minutes",
+    "treatment_time": "3 hours",
+    "offers_infill": false
+  },
+  {
     "name": "Henna Brows",
     "description": "Henna Brows are a semi-permanent eyebrow treatment that tints the eyebrow hair and stains the skin, creating the appearance of fuller, more defined brows. It's a longer-lasting alternative to regular brow tints and will last up to 10 days on skin and up to 6 weeks on hairs",
     "treatment_time": "1 hour",
-
     "offers_infill": false
   },
-    {
+  {
     "name": "Brow Lamination",
-    "description": "Brow lamination is a non-invasive beauty treatment that uses a chemical relaxer to soften and straighten your brow hairs. This procedure redirects unruly eyebrow hairs upward to create a fuller, more defined look. This easy, painless service often includes brow tinting and waxing to give the existing hair a bolder, enhanced look. It will last for up to 8 weeks.\n\nTo maintain the desired look, please book a maintainace appointment after 4 weeks",
+    "description": "Brow lamination is a non-invasive beauty treatment that uses a chemical relaxer to soften and straighten your brow hairs. This procedure redirects unruly eyebrow hairs upward to create a fuller, more defined look. This easy, painless service often includes brow tinting and waxing to give the existing hair a bolder, enhanced look. It will last for up to 8 weeks.<br><br>To maintain the desired look, please book a maintainace appointment after 4 weeks",
     "treatment_time": "1 hour 15 minutes",
-
     "offers_infill": false
   },
   {
     "name": "Brow Wax",
     "description": "After outlining the ideal brow shape for your face, wax is applied to remove unwanted hair",
     "treatment_time": "30 minutes",
-
     "offers_infill": false
   },
   {
     "name": "Eyebrow Stain",
     "description": "Eyebrow Stain offers a more subtle, natural appearance than Henna Brows, which are darker, more visible and dramatic. Brow stain will last on skin up to 10 days and 4-6 weeks on hairs",
     "treatment_time": "45 minutes",
-
     "offers_infill": false
   },
   {
     "name": "Expert Brows",
     "description": "Expert Brows are highly defined, 3D brow shapes that will be achieved through brow mapping, shaping, threading, waxing, tinting and eyebrow extensions",
     "treatment_time": "90 minutes",
-
     "offers_infill": false
   },
   {
     "name": "Eyebrow Tint",
     "description": "Eyebrow Tint is the process of applying tint to enhance and define your brows, darkening fine hairs in and around your eyebrows",
     "treatment_time": "30 minutes",
-
     "offers_infill": false
   },
   {
     "name": "Eyebrow Extensions",
     "description": "Individual hairs are glued to skin or existing hair to create an instantly fuller brow. They are available in a variety of colours and lengths, and last 5-14 days. Touch-ups are required every 2 weeks",
     "treatment_time": "1 hour",
-
     "offers_infill": false
   }
 ]
