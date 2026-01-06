@@ -1,0 +1,298 @@
+---
+title: 'Gallery | Eyeconic Beauty By Anya | Lash and Brow Technician'
+description: 'Explore our gallery of professional lash and brow treatments in Oldmeldrum. See the results of our lash
+extensions, brow styling, and more.'
+preloadImg: '/assets/images/new_background.jpg'
+permalink: 'gallery/'
+eleventyNavigation:
+key: Gallery
+order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/local.css" />
+<link rel="stylesheet" href="/assets/css/critical.css" />
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                  Gallery                     -->
+<!-- ============================================ -->
+
+<section id="gallery-1449" style="padding-top: 12rem;">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <h2 class="cs-title">Full Gallery</h2>
+            </div>
+            <div class="cs-button-group">
+                <button class="cs-button" data-filter="one">
+                    All
+                </button>
+                <button class="cs-button" data-filter="two">
+                    Eyelashes
+                </button>
+                <button class="cs-button" data-filter="three">
+                    Eyebrows
+                </button>
+            </div>
+        </div>
+        <div class="cs-gallery-wrapper">
+            <!--Gallery 1-->
+            <div class="cs-gallery" data-category="one">
+                {% for image in lash_images %}
+                {% set image_path = '/assets/images/lashes/' ~ image ~ '.jpg' %}
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)"
+                        srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                    <source media="(min-width: 601px)"
+                        srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                    <img loading="lazy" decoding="async"
+                        src="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}" alt="Lash treatment"
+                        width="305" height="400">
+                </picture>
+                {% endfor %}
+
+                {% for image in new_lash_images %}
+                {% set image_path = '/assets/images/lash/' ~ image ~ '.jpg' %}
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)"
+                        srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                    <source media="(min-width: 601px)"
+                        srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                    <img loading="lazy" decoding="async"
+                        src="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}" alt="Lash treatment"
+                        width="305" height="400">
+                </picture>
+                {% endfor %}
+
+                {% for image in brow_images %}
+                {% set image_path = '/assets/images/brows/' ~ image ~ '.jpg' %}
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)"
+                        srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                    <source media="(min-width: 601px)"
+                        srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                    <img loading="lazy" decoding="async"
+                        src="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}" alt="Brow treatment"
+                        width="305" height="400">
+                </picture>
+                {% endfor %}
+
+                {% for image in new_brow_images %}
+                {% set image_path = '/assets/images/brow/' ~ image ~ '.jpg' %}
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)"
+                        srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                    <source media="(min-width: 601px)"
+                        srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                    <img loading="lazy" decoding="async"
+                        src="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}" alt="Brow treatment"
+                        width="305" height="400">
+                </picture>
+                {% endfor %}
+
+            </div>
+            <!--Gallery 2-->
+            <div class="cs-gallery cs-hidden" data-category="two">
+                {% for image in lash_images %}
+                {% set image_path = '/assets/images/lashes/' ~ image ~ '.jpg' %}
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)"
+                        srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                    <source media="(min-width: 601px)"
+                        srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                    <img loading="lazy" decoding="async"
+                        src="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}" alt="Lash treatment"
+                        width="305" height="400">
+                </picture>
+                {% endfor %}
+                {% for image in new_lash_images %}
+                {% set image_path = '/assets/images/lash/' ~ image ~ '.jpg' %}
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)"
+                        srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                    <source media="(min-width: 601px)"
+                        srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                    <img loading="lazy" decoding="async"
+                        src="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}" alt="Lash treatment"
+                        width="305" height="400">
+                </picture>
+                {% endfor %}
+            </div>
+
+            <!--Gallery 3-->
+            <div class="cs-gallery cs-hidden" data-category="three">
+                {% for image in brow_images %}
+                {% set image_path = '/assets/images/brows/' ~ image ~ '.jpg' %}
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)"
+                        srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                    <source media="(min-width: 601px)"
+                        srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                    <img loading="lazy" decoding="async"
+                        src="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}" alt="Brow treatment"
+                        width="305" height="400">
+                </picture>
+                {% endfor %}
+                {% for image in new_brow_images %}
+                {% set image_path = '/assets/images/brow/' ~ image ~ '.jpg' %}
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)"
+                        srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                    <source media="(min-width: 601px)"
+                        srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
+                    <img loading="lazy" decoding="async"
+                        src="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}" alt="Brow treatment"
+                        width="305" height="400">
+                </picture>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/background2.jpg' | webp %}">
+        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/background2.jpg' | webp %}">
+        <img decoding="async" src="{% getUrl '/assets/images/background2.jpg' | webp %}"
+            alt="cream background with ripple" width="1920" height="970" aria-hidden="true">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                    CTA                       -->
+<!-- ============================================ -->
+
+<section id="cta-51">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Any Questions? Please get In Touch!</h2>
+
+            <div id="contact-strip-324">
+                <ul class="cs-stat-group">
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+                            <img class="cs-icon" src="/assets/svgs/phone-grey.svg" alt="icon" width="35" height="40"
+                                loading="lazy" decoding="async" aria-hidden="true">
+                        </picture>
+                        <div class="cs-flex-group">
+                            <span class="cs-header">Social Media</span>
+                            <span class="cs-social-link-container">
+                                <a href="https://www.facebook.com/people/Eyeconic-Beauty-By-Anya/61569984466017/"
+                                    class="cs-social-link">
+                                    <img class="cs-social-icon" src="/assets/svgs/facebook-1a.svg" alt="logo" width="12"
+                                        height="12" aria-hidden="true" decoding="async">
+                                </a>
+                                <a target="_blank" rel="noreferrer noopener"
+                                    href="https://www.facebook.com/people/Eyeconic-Beauty-By-Anya/61569984466017/"
+                                    class="cs-link">Facebook</a>
+                            </span>
+                            <span class="cs-social-link-container">
+                                <a href="https://www.instagram.com/eyeconicbeauty_byanya/" class="cs-social-link">
+                                    <img class="cs-social-icon" src="/assets/svgs/instagram1a.svg" alt="logo" width="12"
+                                        height="12" aria-hidden="true" decoding="async">
+                                </a>
+                                <a target="_blank" rel="noreferrer noopener"
+                                    href="https://www.instagram.com/eyeconicbeauty_byanya/"
+                                    class="cs-link">Instagram</a>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+                            <img class="cs-icon" src="/assets/svgs/pin-grey.svg" alt="icon" width="40" height="35"
+                                loading="lazy" decoding="async" aria-hidden="true">
+                        </picture>
+                        <div class="cs-flex-group">
+                            <span class="cs-header">Address</span>
+                            <a target="_blank" rel="noreferrer noopener"
+                                href="https://maps.app.goo.gl/jc9HwuPehkKdESyT7" class="cs-link">Unit 5, Colpy Business
+                                Park, Oldmeldrum, Aberdeenshire, AB51 0FU</a>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+                            <svg class="cs-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4a4a4a"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </picture>
+                        <div class="cs-flex-group">
+                            <span class="cs-header">Anya's Opening Times</span>
+                            <span
+                                style="display: block; font-size: var(--bodyFontSize); line-height: 1.5em; color: white !important;">Mondays
+                                10-8</span>
+                            <span
+                                style="display: block; font-size: var(--bodyFontSize); line-height: 1.5em; color: white !important;">Thursday
+                                10-8</span>
+                            <span
+                                style="display: block; font-size: var(--bodyFontSize); line-height: 1.5em; color: white !important;">Friday
+                                10-8</span>
+                            <span
+                                style="display: block; font-size: var(--bodyFontSize); line-height: 1.5em; color: white !important;">Saturday
+                                10-8</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- Background Image-->
+    <picture class="cs-picture">
+        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/new_background.jpg' | webp %}">
+        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/new_background.jpg' | webp %}">
+        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/new_background.jpg' | webp %}"
+            alt="cabinets" width="1920" height="1280" aria-hidden="true">
+    </picture>
+</section>
+
+<script>
+    class GalleryFilter {
+        filtersSelector = '.cs-button'
+        imagesSelector = '.cs-gallery'
+        activeClass = 'cs-active'
+        hiddenClass = 'cs-hidden'
+
+        constructor() {
+            const $filters = document.querySelectorAll(this.filtersSelector)
+            this.$activeFilter = $filters[0]
+            this.$images = document.querySelectorAll(this.imagesSelector)
+
+            this.$activeFilter.classList.add(this.activeClass)
+
+            for (const $filter of $filters) {
+                $filter.addEventListener('click', () => this.onClick($filter))
+            }
+        }
+
+        onClick($filter) {
+            this.filter($filter.dataset.filter)
+
+            const { activeClass } = this
+
+            this.$activeFilter.classList.remove(activeClass)
+            $filter.classList.add(activeClass)
+
+            this.$activeFilter = $filter
+        }
+
+        filter(filter) {
+            const showAll = filter == 'one'
+            const { hiddenClass } = this
+
+            for (const $image of this.$images) {
+                const show = showAll || $image.dataset.category == filter
+                $image.classList.toggle(hiddenClass, !show)
+            }
+        }
+    }
+
+    new GalleryFilter()
+</script>
+
+{% endblock %}
