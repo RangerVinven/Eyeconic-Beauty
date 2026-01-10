@@ -218,6 +218,12 @@ I’m a fully trained, qualified, and insured Lash and Brow Technician. I aim to
             <h3 class="cs-pricing-header">Eyebrow Treatments</h3>
                 <li class="cs-menu-item">
                     <h3 class="cs-h3">
+                        <span class="cs-header">Microblading</span>
+                        <span class="cs-price">£250</span>
+                    </h3>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
                         <span class="cs-header">Henna Brows</span>
                         <span class="cs-price">£40</span>
                     </h3>
@@ -270,6 +276,12 @@ I’m a fully trained, qualified, and insured Lash and Brow Technician. I aim to
                 <li class="cs-menu-item">
                     <h3 class="cs-h3">
                         <span class="cs-header">Hybrid</span>
+                        <span class="cs-price">£58</span>
+                    </h3>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Angel</span>
                         <span class="cs-price">£58</span>
                     </h3>
                 </li>
@@ -353,66 +365,12 @@ I’m a fully trained, qualified, and insured Lash and Brow Technician. I aim to
 <section id="gallery-1449">
     <div class="cs-container">
         <div class="cs-content">
-            <div class="cs-flex">
-                <h2 class="cs-title">Gallery</h2>
-            </div>
-            <div class="cs-button-group">
-                <button class="cs-button" data-filter="one">
-                    All
-                </button>
-                <button class="cs-button" data-filter="two">
-                    Eyelashes
-                </button>
-                <button class="cs-button" data-filter="three">
-                    Eyebrows
-                </button>
-            </div>
-        </div>
-        <div class="cs-gallery-wrapper">
-            <!--Gallery 1-->
-            <div class="cs-gallery" data-category="one">
-            {% for image in lash_images %}
-            {% set image_path = '/assets/images/lashes/' ~ image ~ '.jpg' %}
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
-                  <source media="(min-width: 601px)" srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
-                  <img loading="lazy" decoding="async" src="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}" alt="Lash treatment" width="305" height="400">
-                </picture>
-              {% endfor %}
-
-            {% for image in brow_images %}
-            {% set image_path = '/assets/images/brows/' ~ image ~ '.jpg' %}
-                <picture class="cs-image">
-                  <source media="(max-width: 600px)" srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
-                  <source media="(min-width: 601px)" srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
-                  <img loading="lazy" decoding="async" src="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}" alt="Lash treatment" width="305" height="400">
-                </picture>
-              {% endfor %}
-
-            </div>
-            <!--Gallery 2-->
-            <div class="cs-gallery cs-hidden" data-category="two">
-            {% for image in lash_images %}
-            {% set image_path = '/assets/images/lashes/' ~ image ~ '.jpg' %}
-                <picture class="cs-image">
-                  <source media="(max-width: 600px)" srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
-                  <source media="(min-width: 601px)" srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
-                  <img loading="lazy" decoding="async" src="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}" alt="Lash treatment" width="305" height="400">
-                </picture>
-              {% endfor %}
-            </div>
-
-            <!--Gallery 3-->
-            <div class="cs-gallery cs-hidden" data-category="three">
-            {% for image in brow_images %}
-            {% set image_path = '/assets/images/brows/' ~ image ~ '.jpg' %}
-                <picture class="cs-image">
-                  <source media="(max-width: 600px)" srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
-                  <source media="(min-width: 601px)" srcset="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}">
-                  <img loading="lazy" decoding="async" src="{% getUrl image_path | resize({height: 320, width: 305}) | webp %}" alt="Lash treatment" width="305" height="400">
-                </picture>
-              {% endfor %}
-            </div>
+            <span class="cs-topper">Portfolio</span>
+            <h2 class="cs-title">Gallery</h2>
+            <p class="cs-text">
+                See the transformations we've achieved for our clients. Browse our gallery of lash and brow treatments.
+            </p>
+            <a href="/gallery/" class="cs-button-solid">View Gallery</a>
         </div>
     </div>
     <picture class="cs-background">
@@ -507,48 +465,6 @@ const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
         }
         item.addEventListener('click', onClick)
         }
-
-class GalleryFilter {
-        filtersSelector = '.cs-button'
-        imagesSelector = '.cs-gallery'
-        activeClass = 'cs-active'
-        hiddenClass = 'cs-hidden'
-
-        constructor() {
-            const $filters = document.querySelectorAll(this.filtersSelector)
-            this.$activeFilter = $filters[0]
-            this.$images = document.querySelectorAll(this.imagesSelector)
-
-            this.$activeFilter.classList.add(this.activeClass)
-
-            for (const $filter of $filters) {
-            $filter.addEventListener('click', () => this.onClick($filter))
-            }
-        }
-
-        onClick($filter) {
-            this.filter($filter.dataset.filter)
-
-            const { activeClass } = this
-
-            this.$activeFilter.classList.remove(activeClass)
-            $filter.classList.add(activeClass)
-
-            this.$activeFilter = $filter
-        }
-
-        filter(filter) {
-            const showAll = filter == 'all'
-            const { hiddenClass } = this
-
-            for (const $image of this.$images) {
-            const show = showAll || $image.dataset.category == filter
-            $image.classList.toggle(hiddenClass, !show)
-            }
-        }
-        }
-
-    new GalleryFilter()
                                 
 </script>
 
